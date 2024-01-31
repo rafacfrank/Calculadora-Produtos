@@ -1,45 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root {
+    --cor-principal: #DCFFB7 ;
+    --cor-secundaria: #FF6868 ;
+    --cor-tercearia: #FFEAA7 ;
+    --cor-quartenaria: #FFBB64 ;
+    --cor-quinta-cor: #D9D9D9;
+    --fonte-inter: 'Inter', sans-serif;
+}
 
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    background-color: #DCFFB7;  
+    background-color: var(--cor-principal);  
+    
 }
 
 .conteudo__descricao {
-    color: #FF6868;
+    color: var(--cor-secundaria);
     font-size: 32px;
-    font-family:'Inter', sans-serif;
+    font-family: var(--fonte-inter);
     margin: 2%;
 }
 
 .conteudo__input {
-    background-color: #FFEAA7;
+    background-color: var(--cor-tercearia);
     height: 40px;
     width: 270px;
     margin: 1% 1% 1% 2%;
-    color: #FFBB64;
+    color: var(--cor-quartenaria);
     font-size: 20px;
     font-weight: bold;    
 }
 
 .conteudo__input::placeholder {
-    color: #FFBB64;
+    color: var(--cor-quartenaria);
     font-size: 20px;
 }
 
 .conteudo__botao {
-    background-color: #D9D9D9;
-    color: #FFBB64;
+    background-color: var(--cor-quinta-cor);
+    color: var(--cor-quartenaria);
     width: 88px;
     height: 40px;
     font-size: 16px;
 }
 
 .conteudo__resultado {
-    background-color: #D9D9D9;
+    background-color: var(--cor-quinta-cor);
     width: 463px;
     height: 77px;
     margin: 1% 1% 1% 2%;
@@ -48,7 +57,7 @@ body {
 
 
 .itens-menu {
-    background-color: #FF6868;  
+    background-color: var(--cor-secundaria);  
     width: 100px;
     height: 40px;
     color: #FFBB64;
@@ -72,9 +81,19 @@ body {
 
 }
 .conteudo__resultado__paragrafo {
-    color: #FF6868;
+    color: var(--cor-secundaria);
     font-size: 20px;
     font-weight: bold;
 
     
+}
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-inter);
+    font-size: 24px;
+    font-weight: 400;
 }
